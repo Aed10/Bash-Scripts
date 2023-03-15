@@ -8,7 +8,7 @@ This is a bash script that automates the process of committing and pushing chang
 
 ## How to use
 
-1. Save the script to a file named `commit_and_push.sh`
+1. Save the script to a file named `commit_and_push.sh` or any name you prefer.
 2. Make the file executable by running `chmod +x commit_and_push.sh`
 3. Open a terminal window and navigate to the directory where the script is saved
 4. Run the script with the following command: `./commit_and_push.sh path/to/file_or_directory commit_message`
@@ -29,7 +29,7 @@ The script will check if the path exists and if it has already been committed to
 To make this script a command in Bash, you need to add the script to your `$PATH`. Here's how you can do that:
 
 1. Save the script to a file named `commit_and_push.sh` in your home directory (`~/`)
-2. Open your `.bashrc` file in a text editor (e.g., `nano ~/.bashrc`)
+2. Open your `.bashrc` file in a text editor (e.g., `vim ~/.bashrc`)
 3. Add the following line to the end of the file: `export PATH=$PATH:~/`
 4. Save and close the file
 5. Run `source ~/.bashrc` to apply the changes to your current terminal session
