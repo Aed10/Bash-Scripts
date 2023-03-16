@@ -28,11 +28,11 @@ The script will check if the path exists and if it has already been committed to
 
 To make this script a command in Bash, you need to add the script to your `$PATH`. Here's how you can do that:
 
-1. Save the script to a file named `commit_and_push.sh` in your home directory (`~/`)
+1. Save the script to a file named `commit` in your home directory (`~/`)
 2. Open your `.bashrc` file in a text editor (e.g., `vim ~/.bashrc`)
 3. Add the following line to the end of the file: `export PATH=$PATH:~/`
 4. Save and close the file
 5. Run `source ~/.bashrc` to apply the changes to your current terminal session
 
-Now you can run the script from any directory by typing `commit_and_push.sh` followed by the arguments.
+Now you can run the script from any directory by typing `commit` followed by the arguments.
 
