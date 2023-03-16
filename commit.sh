@@ -26,7 +26,7 @@ else
 fi
 
 # Push the changes to the remote repository
-git push origin main
+git push origin main  #you can use your default branch here
 
 # Exit with success status code
 exit 0
