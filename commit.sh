@@ -37,5 +37,11 @@ else
   git push
 fi
 
+<<<<<<< HEAD
+=======
+# Push the changes to the remote repository
+git push origin main  #you can use your default branch here
+
+>>>>>>> 27fa853c9bc3604c972d24dfc1ee5a903ab8c2a2
 # Exit with success status code
 exit 0
