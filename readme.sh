@@ -1,4 +1,4 @@
- #!/bin/bash                                                               2
+#!/bin/bash                                                               2
   3 # Ask user for project name and description
   4 echo "Enter project name: "
   5 read project_name
