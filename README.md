@@ -1,38 +1,27 @@
-# Bash Scripts
+# The "commit" Command
 
-Automate some tasks.
+The "commit" command is a Bash script that simplifies the process of committing changes to a Git repository. It takes two arguments: the path to the file or directory that has been changed, and an optional message to include in the commit.
 
-# Bash script to commit and push changes to a Git repository
+## Installation
 
-This is a bash script that automates the process of committing and pushing changes to a Git repository. It takes two arguments: the path to the file or directory to commit and the commit message.
+To install the "<span style="color:red">commit</span>" command, follow these steps:
 
-## How to use
+1. Download the script file to your computer.
+2. Move the script to a directory in your `$PATH`. You can check your `$PATH` by running the following command:
+`echo $PATH`
 
-1. Save the script to a file named `commit_and_push.sh` or any name you prefer.
-2. Make the file executable by running `chmod +x commit_and_push.sh`
-3. Open a terminal window and navigate to the directory where the script is saved
-4. Run the script with the following command: `./commit_and_push.sh path/to/file_or_directory commit_message`
+3. Make the script executable by running the following command:
+`chmod +x commit`
 
-### Example usage
 
-Suppose you have made changes to a file named `index.html` in the `~/my_project` directory, and you want to commit and push those changes with the commit message "Updated index.html".
+## Usage
 
-Here's how you would use the script:
+To use the "commit" command, follow these steps:
 
-1. Open a terminal window and navigate to the directory where the script is saved
-2. Run the following command: `./commit_and_push.sh ~/my_project/index.html "Updated index.html"`
+1. Navigate to the Git repository that contains the file or directory you want to commit changes to.
+2. Run the following command, replacing `path/to/file` with the path to the file or directory that has been changed:
+`commit path/to/file "optional commit message"`
+If you don't provide an optional commit message, the script will use a default message that includes the name of the directory containing the file.
+3. The script will automatically commit the changes and push them to the remote repository.
 
-The script will check if the path exists and if it has already been committed to the Git repository. If the path exists and has not been committed, the script will add the changes, commit them with the specified commit message, and push them to the remote repository. If the path has already been committed, the script will use `git commit --amend` to update the existing commit and push the changes to the remote repository.
-
-## How to make the script a command in Bash
-
-To make this script a command in Bash, you need to add the script to your `$PATH`. Here's how you can do that:
-
-1. Save the script to a file named `commit` in your home directory (`~/`)
-2. Open your `.bashrc` file in a text editor (e.g., `vim ~/.bashrc`)
-3. Add the following line to the end of the file: `export PATH=$PATH:~/`
-4. Save and close the file
-5. Run `source ~/.bashrc` to apply the changes to your current terminal session
-
-Now you can run the script from any directory by typing `commit` followed by the arguments.
 
